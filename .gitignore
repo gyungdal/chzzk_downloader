@@ -151,3 +151,4 @@ test2.js
 *.m3u8
 *.txt
 *DS_Store
+test/
