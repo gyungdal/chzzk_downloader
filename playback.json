@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "videoId": "818BD39809F9B21F6D1E00D26FDC49F157F5",
+    "streamSeq": 26441774,
+    "liveId": "4141757",
+    "paidLive": false,
+    "cdnInfo": { "cdnType": "LCDN", "zeroRating": false },
+    "p2p": false
+  },
+  "serviceMeta": { "contentType": "VIDEO" },
+  "live": {
+    "start": "2023-12-19T12:14:48",
+    "open": "2023-12-19T12:29:24",
+    "timeMachine": false,
+    "status": "STARTED"
+  },
+  "api": [
+    {
+      "name": "watching",
+      "path": "https://apis.naver.com/neonplayer/olive-stat/1.0/lives/4141757/watchingCp?cc=KR"
+    },
+    {
+      "name": "waiting",
+      "path": "https://apis.naver.com/neonplayer/olive-stat/1.0/lives/4141757/waiting"
+    },
+    {
+      "name": "p2p-config",
+      "path": "https://apis.naver.com/livecloud/livecloud/xray/p2p/v1/config/chzzk"
+    },
+    {
+      "name": "qoeConfig",
+      "path": "https://apis.naver.com/policy/policy/policy"
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "HLS",
+      "protocol": "HLS",
+      "path": "https://livecloud.pstatic.net/chzzk/lip2_kr/pgsg1nmss2u0001/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/hls_playlist.m3u8?hdnts=st=1702958204~exp=1702990614~acl=*/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/*~hmac=43a4c355bc3086ac79f3dac920c5cc626ae1abb156780d3d92df4808233b2570",
+      "encodingTrack": [
+        {
+          "encodingTrackId": "144p",
+          "videoProfile": "main",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 128000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 256,
+          "videoHeight": 144,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "360p",
+          "videoProfile": "main",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 800000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 640,
+          "videoHeight": 360,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "1080p",
+          "videoProfile": "high",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 8000000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "480p",
+          "videoProfile": "main",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 1500000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 852,
+          "videoHeight": 480,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "720p",
+          "videoProfile": "high",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 5000000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "alow.stream",
+          "path": "https://livecloud.pstatic.net/chzzk/lip2_kr/pgsg1nmss2u0001/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/afragalow.stream_hls_playlist.m3u8?hdnts=st=1702958204~exp=1702990614~acl=*/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/*~hmac=43a4c355bc3086ac79f3dac920c5cc626ae1abb156780d3d92df4808233b2570",
+          "audioCodec": "AAC",
+          "audioBitRate": 64000,
+          "audioOnly": true,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false
+        }
+      ]
+    },
+    {
+      "mediaId": "LLHLS",
+      "protocol": "HLS",
+      "path": "https://livecloud.pstatic.net/chzzk/lip2_kr/pgsg1nmss2u0001/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/playlist.m3u8?hdnts=st=1702958204~exp=1702990614~acl=*/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/*~hmac=43a4c355bc3086ac79f3dac920c5cc626ae1abb156780d3d92df4808233b2570",
+      "latency": "lowLatency",
+      "encodingTrack": [
+        {
+          "encodingTrackId": "144p",
+          "videoProfile": "main",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 128000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 256,
+          "videoHeight": 144,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "360p",
+          "videoProfile": "main",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 800000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 640,
+          "videoHeight": 360,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "1080p",
+          "videoProfile": "high",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 8000000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 1920,
+          "videoHeight": 1080,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "480p",
+          "videoProfile": "main",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 1500000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 852,
+          "videoHeight": 480,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "720p",
+          "videoProfile": "high",
+          "audioProfile": "LC",
+          "videoCodec": "H264",
+          "videoBitRate": 5000000,
+          "audioBitRate": 192000,
+          "videoFrameRate": "30.0",
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false,
+          "videoDynamicRange": "SDR"
+        },
+        {
+          "encodingTrackId": "alow.stream",
+          "path": "https://livecloud.pstatic.net/chzzk/lip2_kr/pgsg1nmss2u0001/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/afragalow.stream_playlist.m3u8?hdnts=st=1702958204~exp=1702990614~acl=*/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/*~hmac=43a4c355bc3086ac79f3dac920c5cc626ae1abb156780d3d92df4808233b2570",
+          "audioCodec": "AAC",
+          "audioBitRate": 64000,
+          "audioOnly": true,
+          "audioSamplingRate": 48000,
+          "audioChannel": 2,
+          "avoidReencoding": false
+        }
+      ]
+    }
+  ],
+  "thumbnail": {
+    "snapshotThumbnailTemplate": "https://livecloud-thumb.akamaized.net/chzzk/livecloud/KR/stream/26441774/live/4141757/record/24029987/thumbnail/image_{type}.jpg",
+    "types": ["1080", "720", "480", "360", "270", "144"]
+  },
+  "multiview": []
+}

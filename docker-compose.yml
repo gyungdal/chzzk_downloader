@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    image: chzzkdownloader:master
+    command:
+      - node
+      - "dist/index.js"
+      - 68f895c59a1043bc5019b5e08c83a5c5
+      - radiyu
+    volumes:
+      - ./data:/usr/src/app/dist/storage/
