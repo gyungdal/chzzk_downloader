@@ -83,6 +83,7 @@ export default class Chzzk {
   }
 
   async timerHandler() {
+    if (this.streamer.record == "PROCESSING") return;
     const onlineCheck = await this.check();
     if (onlineCheck) {
       if (this.streamer.status == "OFFLINE") {
