@@ -1,12 +1,11 @@
 version: "3.8"
 services:
-  web:
+  radiyu-chzzk:
     build: .
     image: chzzkdownloader:master
+    restart: always
     command:
-      - node
-      - "dist/index.js"
       - 68f895c59a1043bc5019b5e08c83a5c5
       - radiyu
     volumes:
-      - ./data:/usr/src/app/dist/storage/
+      - /home/gyungdal/test/twitch/storage/vods/radiyu/chzzk:/usr/src/app/dist/storage/
