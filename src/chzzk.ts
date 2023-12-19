@@ -8,7 +8,7 @@ import {
   LiveStatusContent,
 } from "./response";
 import StreamerStatus from "./status";
-import { existsSync, mkdirSync } from "fs";
+import { existsSync, mkdirSync, rmSync } from "fs";
 export default class Chzzk {
   streamer: StreamerStatus;
   intervalId?: NodeJS.Timeout;
@@ -18,9 +18,20 @@ export default class Chzzk {
     this.intervalId = undefined;
   }
 
-  endStream() {
+  endStream(name: string) {
     this.streamer.record = "WAIT";
-    console.log("file has been converted succesfully");
+    console.log("[Chzzk] file has been downloaded succesfully");
+    const convertFilePath = name.replace(".mp4", "_h265.mp4");
+    console.log("[Chzzk] file convert start");
+    ffmpeg()
+      .input(name)
+      .addOptions(["-c:v libx265", "-crf 26", "-c:a aac"])
+      .on("end", () => {
+        console.log(`[Chzzk] file convert done : ${convertFilePath}`);
+        console.log(`[Chzzk] remove original file : ${name}`);
+        rmSync(name);
+      })
+      .saveToFile(convertFilePath);
   }
   errorStream(err: any) {
     this.streamer.record = "WAIT";
@@ -60,7 +71,7 @@ export default class Chzzk {
         url // "https://livecloud.pstatic.net/chzzk/lip2_kr/pgsg1nmss2u0001/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/hls_playlist.m3u8?hdnts=st=1702958204~exp=1702990614~acl=*/5pw4zncgytyrbw8w9neui1ga56s5w2ewox/*~hmac=43a4c355bc3086ac79f3dac920c5cc626ae1abb156780d3d92df4808233b2570"
       )
       .addOptions(["-c copy", "-bsf:a aac_adtstoasc"])
-      .on("end", () => this.endStream())
+      .on("end", () => this.endStream(savedPath))
       .on("error", (err) => this.errorStream(err))
       .saveToFile(savedPath);
   }
