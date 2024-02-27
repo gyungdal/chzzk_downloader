@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/tsc",
+    "test": "./node_modules/.bin/ts-node src/index.ts 68f895c59a1043bc5019b5e08c83a5c5 radiyu",
     "start": "node ./dist/index.js 68f895c59a1043bc5019b5e08c83a5c5 radiyu"
   },
   "author": "",

@@ -78,7 +78,7 @@ export default class Chzzk {
 
   async check(): Promise<boolean> {
     const status = await axios.get<ChzzkResponse<LiveStatusContent>>(
-      `https://api.chzzk.naver.com/polling/v1/channels/${this.streamer.id}/live-status`
+      `https://api.chzzk.naver.com/polling/v2/channels/${this.streamer.id}/live-status`
     );
     if (status.data.content.status == "OPEN") {
       return true;
@@ -88,7 +88,7 @@ export default class Chzzk {
 
   async getDetail(): Promise<ChzzkResponse<LiveDetailContent>> {
     const status = await axios.get<ChzzkResponse<LiveDetailContent>>(
-      `https://api.chzzk.naver.com/service/v1/channels/${this.streamer.id}/live-detail`
+      `https://api.chzzk.naver.com/service/v2/channels/${this.streamer.id}/live-detail`
     );
     return status.data;
   }
