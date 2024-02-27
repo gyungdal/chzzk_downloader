@@ -9,3 +9,13 @@ services:
       - radiyu
     volumes:
       - /home/gyungdal/test/twitch/storage/vods/radiyu/chzzk:/usr/src/app/dist/storage/
+  lucky-chzzk:
+    build: .
+    image: chzzkdownloader:master
+    restart: always
+    command:
+      - 2708947b66f527fd74e6b3d6bcc1349b
+      - lucky
+    volumes:
+      - /home/gyungdal/test/twitch/storage/vods/luck22222/chzzk:/usr/src/app/dist/storage/
+
