@@ -16,6 +16,11 @@ export default class Chzzk {
   constructor(id: string, name: string) {
     this.streamer = new StreamerStatus(id, name);
     this.intervalId = undefined;
+    axios.defaults.headers.common['User-Agent'] = "PostmanRuntime/7.37.0";
+    axios.defaults.headers.common['Accept'] = "*/*";
+    axios.defaults.headers.common['Accept-Encoding'] = "gzip, deflate, br";
+    axios.defaults.headers.common['Connection'] = "keep-alive";
+
   }
 
   endStream(name: string) {
@@ -111,6 +116,7 @@ export default class Chzzk {
     if (this.streamer.status == "ONLINE") {
       if (this.streamer.record == "WAIT") {
         const detail = await this.getDetail();
+        console.log(detail);
         const livePlaybackJson: LiveDetailPlayback = JSON.parse(
           detail.content.livePlaybackJson
         );
