@@ -116,7 +116,6 @@ export default class Chzzk {
     if (this.streamer.status == "ONLINE") {
       if (this.streamer.record == "WAIT") {
         const detail = await this.getDetail();
-        console.log(detail);
         const livePlaybackJson: LiveDetailPlayback = JSON.parse(
           detail.content.livePlaybackJson
         );
