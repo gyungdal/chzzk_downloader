@@ -133,7 +133,7 @@ export default class Chzzk {
   }
 
   start() {
-    this.intervalId = setInterval(() => this.timerHandler(), 5000);
+    this.intervalId = setInterval(() => this.timerHandler(), 60000);
     console.log("[Chzzk] Start!");
   }
 
